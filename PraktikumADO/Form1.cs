@@ -20,7 +20,7 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-            "Data Source=FASYALTP\\FASYALTP;Initial Catalog=DBAkademik;Integrated Security=True"
+            "Data Source=FASYALTP\\FASYALTP;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
         }
         public Form1()
