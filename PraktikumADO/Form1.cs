@@ -36,7 +36,19 @@ namespace PraktikumADO
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Koneksi();
+                conn.Open();
 
+                MessageBox.Show("Koneksi ke Database berhasil");
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
