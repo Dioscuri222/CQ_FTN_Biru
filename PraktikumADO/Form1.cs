@@ -11,13 +11,22 @@ using System.Windows.Forms;
 
 namespace PraktikumADO
 {
+
     public partial class Form1 : Form
     {
         SqlConnection conn;
         SqlCommand cmd;
+
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+            "Data Source=FASYALTP\\FASYALTP;Initial Catalog=DBAkademik;Integrated Security=True"
+            );
+        }
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -27,9 +36,7 @@ namespace PraktikumADO
 
         private void button1_Click(object sender, EventArgs e)
         {
-            conn = new SqlConnection(
-                "Data Source=FASYALTP\\FASYALTP;Initial Catalog=DBAkademik;Integrated Security=True"
-                );
+
         }
 
         private void label1_Click(object sender, EventArgs e)
