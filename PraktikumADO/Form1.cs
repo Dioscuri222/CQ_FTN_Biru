@@ -27,7 +27,9 @@ namespace PraktikumADO
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            conn = new SqlConnection(
+                "Data Source=FASYALTP\\FASYALTP;Initial Catalog=DBAkademik;Integrated Security=True"
+                );
         }
 
         private void label1_Click(object sender, EventArgs e)
