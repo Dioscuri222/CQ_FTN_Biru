@@ -118,5 +118,20 @@ namespace PraktikumADO
                 MessageBox.Show(ex.Message); 
             }
         }
+
+        private void btnHitungDsn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdateMhs_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
